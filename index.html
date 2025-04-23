@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,3 +10,179 @@
     <p>TEst</p>
 </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 main links for bottstrap resources (CSS) -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
+                <!-- container-fluid makes the navbar expand to the fill width of the container -->
+            <div class="container-fluid">
+                    <!-- Wesbite Title -->
+                <a class="navbar-brand" href= "index.html">WebsiteExample</a>
+                <!-- Navbar Toggle - repponsive behavior - collapses  -->
+                 
+                 <button class="navbar-toggler" type="button" 
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#navbarNav"
+                 aria-controls="navbarNav"
+                 aria-expanded="false"
+                 aria-label="Toggle navigation">
+                 >
+                 <!-- 
+                  data-bs-toggle="collapse" - Indicates the button will toggle collapsible content
+                  data-bs-target="#navbarNav" - The defualt ID of the lement to collapse and expand
+                  aria-controls="navbarNav" - Accessibility - specifies which element the button controls
+                    aria-expanded="false" - Indicates whether the collapsible content is currently expanded
+                    aria-label="Toggle navigation" - label to help external or browser software
+                 -->
+
+                 <!-- the hamburget icon -->
+                 <span class="navbar-toggle-icon"></span>
+
+                 </button>
+
+                 <!-- navbar content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                    <!-- item 2 -->
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"  href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled"  href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <main>
+
+ <!-- Main content section -->
+<div class="container mt-4"> <!-- 'container' centers content with padding. mt-4 adds top margin -->
+    <div class="row"> <!-- creates a horizontal group of columns -->
+        <div class="col-md-12"> <!-- spans full width (12/12 col) -->
+
+            <!-- Slideshow Carousel -->
+            <div id="restaurantCarousel" class="carousel slide mb-4" data-bs-ride="carousel"> <!-- 'carousel slide' initialises the Bootstrap carousel. 'mb-4' adds bottom margin -->
+                <div class="carousel-inner"> <!-- Wrapper -->
+                    <div class="carousel-item active"> <!-- carousel-item - is each slide. active - shows the first slide -->
+                        <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="Dish 1"> <!-- d-block - makes the image a block element. w-100 - makes it full width -->
+                        <div class="carousel-caption d-none d-md-block"> <!-- carousel-caption - styles the text overlay. d-none d-md-block - hides on small screens, shows on medium+ -->
+                            <h1 class="display-5">Welcome</h1> <!-- display-5 - is a large heading style -->
+                            <p>Enjoy the best dishes!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Dish 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Interior">
+                    </div>
+                </div>
+                <!-- data-bs-target="#restaurantCarousel - meaning the button links to the restaurantCarousel above as they have the same id-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev"> <!-- Control for previous slide -->
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next"> <!-- Control for next slide -->
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+              
+            <div class="text-center mb-4"> 
+                <a href="#" class="btn btn-primary btn-lg">View Our Menu</a> 
+            </div>
+
+            <!-- Feature cards -->
+            <div class="row"> <!-- Row for holding cards -->
+                <div class="col-md-4"> <!-- Each card takes up 4/12 columns on medium and up -->
+                    <div class="card mb-4"> <!-- card - is the Bootstrap card container. mb-4 - adds bottom spacing -->
+                        <img src="https://picsum.photos/400/200?random=4" class="card-img-top" alt="Card 1"> <!-- card-img-top - places image on top -->
+                        <div class="card-body"> <!-- Main content area of the card -->
+                            <h5 class="card-title">Fresh Ingredients</h5> <!-- Card heading -->
+                            <p class="card-text">Sample text Sample text Sample text Sample text.</p> <!-- Card text -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/400/200?random=5" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cozy Atmosphere</h5>
+                            <p class="card-text">Sample text Sample text Sample text Sample text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://picsum.photos/400/200?random=6" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Chef Specials</h5>
+                            <p class="card-text">Sample text Sample text Sample text Sample text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+
+
+
+
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
+>>>>>>> Stashed changes
